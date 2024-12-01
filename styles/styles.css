@@ -84,7 +84,7 @@ p {
 .fake-button{
     width: 250px;
     padding-left: 150px;
-    
+    align-items: center;
 }
 
 
@@ -126,14 +126,14 @@ ul li {
     margin-top: 24px; /* Space above */
     margin-bottom: 12px; /* Space below */
 }
-#clear-button {
+.clear-button {
     width: 200px; /* Fixed width */
     display: inline-block; /* Maintain layout control */
     margin: 0 auto; /* Center horizontally */
     text-align: center; /* Center text within button */
 }
 .clicked {
-    background-color: mustard; /* Mustard yellow background */
+    background-color: #E5AF42; /* Mustard yellow background */
     color: black; /* Ensure text is readable */
 }
 * {
