@@ -92,17 +92,47 @@ body {
     - all items within the page will be centered within their available space.
 
 */
-
-
-
-
-
-
-
-
-
-
-
+.booking-page {
+    width: 600px; /* Page width */
+    margin: 0 auto; /* Center content horizontally */
+    text-align: center; /* Center align text */
+    font-size: 18px; /* Set text size */
+}
+.day-button {
+    display: inline-block; /* Inline-block for proper spacing */
+    margin-bottom: 12px; /* Space below the day-selectors */
+    width: 60px; /* Fixed width for list items */
+    text-align: center; /* Center content within buttons */
+    border: 1px solid black; /* Solid black border */
+}
+.small-button {
+    border: 1px solid black; /* Solid black border */
+    padding: 5px; /* Space between border and content */
+    text-align: center; /* Center content within button */
+}
+ul li {
+    margin-bottom: 20px; /* Space between list items */
+}
+.top-margin {
+    margin-top: 24px; /* Space above */
+    margin-bottom: 12px; /* Space below */
+}
+#clear-button {
+    width: 200px; /* Fixed width */
+    display: inline-block; /* Maintain layout control */
+    margin: 0 auto; /* Center horizontally */
+    text-align: center; /* Center text within button */
+}
+.clicked {
+    background-color: mustard; /* Mustard yellow background */
+    color: black; /* Ensure text is readable */
+}
+* {
+    box-sizing: border-box; /* Include padding/border in width calculations */
+    display: flex; /* Enable flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
 
 
 /************* contact page ************* - David/
