@@ -81,42 +81,33 @@ body .index{
     padding: 20px;
 }
 
-.index .flex {
+.flex {
     flex: 1;
     margin-right: 25px;
 }
 
-.image-column {
+.flex img{
     width: 300px;
     margin-bottom: 50px;
 }
 
-.content-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-
-h2 {
+.index h2 {
     font-size: 16px;
     line-height: 16px;
 }
 
-p {
+.index p {
     margin-bottom: 12px;
 }
 
-.flex .fake-button {
+.index .fake-button{
     display: flex;
-    flex-direction: column;
-    gap: 150px;
-    background-color: #E5AF42;
-}
-
-.fake-button{
     width: 250px;
     margin-left: 150px;
     align-items: center;
+    flex-direction: column;
+    gap: 150px;
+    background-color: #E5AF42;
 }
 
 .image-column {
@@ -193,7 +184,7 @@ body .booking-page{
 /************* contact page ************* - David */
 
 /* Center the main section */
-.contact body {
+body .contact {
     height: 420px;
     display: flex;
     flex-direction: column;
