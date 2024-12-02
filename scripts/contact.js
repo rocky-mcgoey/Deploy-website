@@ -2,9 +2,9 @@
 
 // hint: you can change the style of an element by modifying the value of that element's .style.fontSize, or by updating its .classList.
 
-var submitButton = document.getElementById("submit-button")
+var submitButton = document.getElementById("submit-button");
 
-var contactButton = document.getElementById("contact-button")
+var contactPage = document.getElementById("contact-page");
 
 function handleSubmit() {
 

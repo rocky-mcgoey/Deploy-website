@@ -1,4 +1,4 @@
-/************* your name: 
+/************* your name: David, Rocky, Connor
 
 INSTRUCTIONS:
 Comments starting with TO-DO have been included in this file to describe the needed styling: please translate these to the appropriate CSS declarations. 
@@ -64,29 +64,65 @@ body {
 
 
 
-/************* index page ************* - David/ 
+/************* index page *************/ 
 
-/* TO-DO: 
-    - this is a 2-column layout: text on the left, and an image on the right. The image will be 300px wide, with 25px between it and the text column, which takes up the remaining space. The image will also have 50px of space below.
-    - Done the h2 on this page will have a line-height equal to the font size.
-    - Done each paragraph on this page will have 12px of space beneath it.
-    - Done each fake-button on this page will be 250px wide with 150px of space between them.
-    - the pair of fake-buttons will be centered on the page. HINT: can calculate the required margin to make them appear to be centered.
+/* TO-DO:  STILL IN PROGRESS 
+    -this is a 2-column layout: text on the left, and an image on the right. The image will be 300px wide, with 25px between it and the text column, which takes up the remaining space. 
+        The image will also have 50px of space below.
+    -the h2 on this page will have a line-height equal to the font size.
+    -each paragraph on this page will have 12px of space beneath it.
+    -each fake-button on this page will be 250px wide with 150px of space between them.
+    -the pair of fake-buttons will be centered on the page. HINT: can calculate the required margin to make them appear to be centered.
 */
+body .index{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.index .flex {
+    flex: 1;
+    margin-right: 25px;
+}
+
+.image-column {
+    width: 300px;
+    margin-bottom: 50px;
+}
+
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
 
 h2 {
-    font-size:medium;
-    line-height: 12px;
+    font-size: 16px;
+    line-height: 16px;
 }
+
 p {
-    padding-bottom: 12px;
+    margin-bottom: 12px;
 }
+
+.flex .fake-button {
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+    background-color: #E5AF42;
+}
+
 .fake-button{
     width: 250px;
-    padding-left: 150px;
+    margin-left: 150px;
     align-items: center;
 }
 
+.image-column {
+    width: 300px;
+    margin-bottom: 50px; 
+}
 
 /************* bookings page *************/
 
@@ -101,42 +137,43 @@ p {
     - all items within the page will be centered within their available space.
 
 */
-.booking-page {
+
+body .booking-page{
     width: 600px; /* Page width */
     margin: 0 auto; /* Center content horizontally */
     text-align: center; /* Center align text */
     font-size: 18px; /* Set text size */
 }
-.day-button {
+.booking-page .day-selector {
     display: inline-block; /* Inline-block for proper spacing */
     margin-bottom: 12px; /* Space below the day-selectors */
     width: 60px; /* Fixed width for list items */
     text-align: center; /* Center content within buttons */
     border: 1px solid black; /* Solid black border */
 }
-.small-button {
+.booking-page .small-button {
     border: 1px solid black; /* Solid black border */
     padding: 5px; /* Space between border and content */
     text-align: center; /* Center content within button */
 }
-ul li {
+.booking-page ul li {
     margin-bottom: 20px; /* Space between list items */
 }
-.top-margin {
+.booking-page .top-margin {
     margin-top: 24px; /* Space above */
     margin-bottom: 12px; /* Space below */
 }
-.clear-button {
+.booking-page .clear-button {
     width: 200px; /* Fixed width */
     display: inline-block; /* Maintain layout control */
     margin: 0 auto; /* Center horizontally */
     text-align: center; /* Center text within button */
 }
-.clicked {
+.booking-page .clicked {
     background-color: #E5AF42; /* Mustard yellow background */
     color: black; /* Ensure text is readable */
 }
-* {
+.booking-page * {
     box-sizing: border-box; /* Include padding/border in width calculations */
     display: flex; /* Enable flexbox for centering */
     justify-content: center; /* Center horizontally */
@@ -148,11 +185,60 @@ ul li {
 /* TO DO:
     - the main section of the .contact page will be 420px tall, and centered.
     - the contents will be 2 columns: the labels column is 150px wide and right-aligned, and the input column is 300px wide. There will be 24px of space between the columns, and the pair of columns will be centered on the page.
-    - the textarea element will be 150px tall.
+    - the text area element will be 150px tall.
     - all form input, textarea, and and button elements will have the same font as the rest of the page, a line-height of 24px, a font-size of 16px, and the same border as other buttons on the site. There will be 24px of space below each of these elements.
     - the edges of the button will line up exactly with the text-area element. HINT: time for some math!
 */
 
+/************* contact page ************* - David */
+
+/* Center the main section */
+.contact body {
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style the form */
+form {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+/* Style the labels column */
+form label {
+    width: 150px;
+    text-align: right;
+    font-size: 16px; 
+    line-height: 24px;
+}
+
+/* Style the input column */
+form input, 
+form textarea, 
+form button {
+    width: 300px;
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 24px;
+    border: 1px solid black;
+    margin-bottom: 24px;
+}
+
+form textarea {
+    height: 150px;
+    resize: none; 
+}
+
+/* Style the button */
+form button {
+    width: 300px;
+    height: 48px;
+    cursor: pointer;
+}
 
 
 
