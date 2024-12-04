@@ -183,7 +183,7 @@ body .booking-page{
 
 /************* contact page ************* - David */
 
-/* Center the main section */
+
 body .contact {
     height: 420px;
     display: flex;
@@ -192,14 +192,12 @@ body .contact {
     align-items: center;
 }
 
-/* Style the form */
-form {
+.contact form {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 24px;
 }
 
-/* Style the labels column */
 form label {
     width: 150px;
     text-align: right;
@@ -207,7 +205,6 @@ form label {
     line-height: 24px;
 }
 
-/* Style the input column */
 form input, 
 form textarea, 
 form button {
@@ -224,7 +221,7 @@ form textarea {
     resize: none; 
 }
 
-/* Style the button */
+
 form button {
     width: 300px;
     height: 48px;
