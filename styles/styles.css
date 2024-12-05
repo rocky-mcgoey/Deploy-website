@@ -139,14 +139,14 @@ body .index{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
-    justify-content: center;
     padding: 20px;
 }
 
-.flex .index  {
+.index .flex  {
     display: flex;
-    flex: 1;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     margin-right: 25px;
 }
 
@@ -169,7 +169,7 @@ body .index{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 150px;
+    
   }
   
   .index .fake-button {
@@ -177,6 +177,7 @@ body .index{
     text-align: center;
     line-height: 3;
     border: 1px solid black;
+    gap: 150px;
   }
 
 .index .image-column {
