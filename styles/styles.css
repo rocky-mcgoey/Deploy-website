@@ -41,21 +41,30 @@ body {
         - change the text colour to white, and 
         - change the cursor to pointer.
 */
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
 h1 {
     font-size: 48px;
     text-align: center;
 }
+
 h2 {
     font-size: 36px;
     margin-bottom: 12px;
 }
+
 .large-text {
     font-size: 24px;
 }
-.fake-button, .blue-hover {
+
+.fake-button:hover, .blue-hover:hover {
     text-decoration: underline;
     background-color: cornflowerblue;
-    text-decoration-color: white;
+    color: white;
     cursor: pointer;
 }
 
@@ -68,23 +77,36 @@ h2 {
     - there will be 25px of space between the header and main, and 50px of space between main and footer.
     - the footer will be 60px tall, have a font-weight of 200, and the text within will be centered vertically and horizontally.
 */
-header{
+
+header {
     background-color: #E5AF42;
     height: 150px;
     margin-bottom: 25px;
 }
-header .flex{
-    flex: 2;
+
+header .flex {
+    display: flex;
+    align-items: center; /* Vertically centers the content */
+    justify-content: space-between; /* Pushes the image and text to opposite sides */
+    width: 100%;
+    padding: 0 25px; /* Adds consistent horizontal padding */
 }
-header .flex img{
+
+header h1 {
+    margin: 0;
+    font-size: 48px;
+    text-align: center; /* Ensures proper text alignment */
+    flex-grow: 1; /* Ensures the h1 occupies remaining space */
+}
+
+header .flex img {
     width: 100px;
     height: 100px;
-    margin-bottom: 25px;
-    margin-left: 25px;
-    margin-top: 25px;
+    margin: 25px;
 }
-footer{
-    color: #E5AF42;
+
+footer {
+    background-color: #E5AF42;
     margin-top: 50px;
     height: 60px;
     font-weight: 200;
@@ -110,12 +132,12 @@ body .index{
     padding: 20px;
 }
 
-.flex {
+.flex .index  {
     flex: 1;
     margin-right: 25px;
 }
 
-.flex img{
+.index .flex img{
     width: 300px;
     margin-bottom: 50px;
 }
@@ -139,7 +161,7 @@ body .index{
     background-color: #E5AF42;
 }
 
-.image-column {
+.index .image-column {
     width: 300px;
     margin-bottom: 50px; 
 }
@@ -179,20 +201,24 @@ body .booking-page{
 .booking-page ul li {
     margin-bottom: 20px; /* Space between list items */
 }
+
 .booking-page .top-margin {
     margin-top: 24px; /* Space above */
     margin-bottom: 12px; /* Space below */
 }
+
 .booking-page .clear-button {
     width: 200px; /* Fixed width */
     display: inline-block; /* Maintain layout control */
     margin: 0 auto; /* Center horizontally */
     text-align: center; /* Center text within button */
 }
+
 .booking-page .clicked {
     background-color: #E5AF42; /* Mustard yellow background */
     color: black; /* Ensure text is readable */
 }
+
 .booking-page * {
     box-sizing: border-box; /* Include padding/border in width calculations */
     display: flex; /* Enable flexbox for centering */
@@ -221,7 +247,7 @@ body .contact {
     align-items: center;
 }
 
-.contact form {
+ form {
     display: flex;
     flex-direction: column;
     gap: 24px;
