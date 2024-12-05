@@ -41,13 +41,23 @@ body {
         - change the text colour to white, and 
         - change the cursor to pointer.
 */
-
-
-
-
-
-
-
+h1 {
+    font-size: 48px;
+    text-align: center;
+}
+h2 {
+    font-size: 36px;
+    margin-bottom: 12px;
+}
+.large-text {
+    font-size: 24px;
+}
+.fake-button, .blue-hover {
+    text-decoration: underline;
+    background-color: cornflowerblue;
+    text-decoration-color: white;
+    cursor: pointer;
+}
 
 /************* header/footer styling *************/
 
@@ -58,9 +68,28 @@ body {
     - there will be 25px of space between the header and main, and 50px of space between main and footer.
     - the footer will be 60px tall, have a font-weight of 200, and the text within will be centered vertically and horizontally.
 */
-
-
-
+header{
+    background-color: #E5AF42;
+    height: 150px;
+    margin-bottom: 25px;
+}
+header .flex{
+    flex: 2;
+}
+header .flex img{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 25px;
+    margin-left: 25px;
+    margin-top: 25px;
+}
+footer{
+    color: #E5AF42;
+    margin-top: 50px;
+    height: 60px;
+    font-weight: 200;
+    text-align: center;
+}
 
 
 
