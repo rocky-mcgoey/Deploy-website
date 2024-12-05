@@ -288,13 +288,6 @@ body .contact {
     display: flex;
     margin-bottom: 24px;
 }
-
- form {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-}
-
 form label {
     width: 150px;
     text-align: right;
@@ -312,7 +305,7 @@ form label {
 }
 .contact form button{
     height: 50px;
-    justify-content: flex-end;
+    margin-left: 165px;
 }
 
 form textarea {
