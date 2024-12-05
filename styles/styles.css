@@ -246,10 +246,15 @@ body .booking-page{
     text-align: center; 
 }
 
-.small-button .clicked{
+.booking-page .clicked {
+    background-color: #E5AF42; 
+    color: black; 
+}
+
+.booking-page .day-selector.clicked, 
+.booking-page .small-button.clicked {
     background-color: #E5AF42;
     color: white;
-    
 }
 
 
