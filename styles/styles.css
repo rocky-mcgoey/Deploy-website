@@ -286,8 +286,6 @@ body .contact {
 }
 .contact form .flex {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
     margin-bottom: 24px;
 }
 
@@ -314,6 +312,7 @@ form label {
 }
 .contact form button{
     height: 50px;
+    justify-content: flex-end;
 }
 
 form textarea {
