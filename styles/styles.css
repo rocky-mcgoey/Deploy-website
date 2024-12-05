@@ -219,11 +219,10 @@ body .booking-page{
     color: black; /* Ensure text is readable */
 }
 
-.booking-page * {
-    box-sizing: border-box; /* Include padding/border in width calculations */
-    display: flex; /* Enable flexbox for centering */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
+.booking-page .day-selector.clicked, 
+.booking-page .small-button.clicked {
+    background-color: #E5AF42;
+    color: white;
 }
 
 
