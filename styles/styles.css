@@ -117,10 +117,16 @@ header .flex img {
 
 footer {
     background-color: #E5AF42;
-    padding: 50px;
+    margin-top: 50px;
     height: 60px;
     font-weight: 200;
     text-align: center;
+    padding-top: 10px;
+
+}
+footer p{
+    margin: 0px;
+    padding: 0px;
 }
 
 
