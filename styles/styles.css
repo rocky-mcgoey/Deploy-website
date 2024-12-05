@@ -107,7 +107,7 @@ header .flex img {
 
 footer {
     background-color: #E5AF42;
-    margin-top: 50px;
+    padding: 50px;
     height: 60px;
     font-weight: 200;
     text-align: center;
@@ -151,15 +151,20 @@ body .index{
     margin-bottom: 12px;
 }
 
-.index .fake-button{
+.index .fake-buttons {
     display: flex;
-    width: 250px;
-    margin-left: 150px;
+    justify-content: center;
     align-items: center;
-    flex-direction: column;
     gap: 150px;
+  }
+  
+  .index .fake-button {
+    width: 250px;
     background-color: #E5AF42;
-}
+    text-align: center;
+    line-height: 3;
+    border: 1px solid black;
+  }
 
 .index .image-column {
     width: 300px;
