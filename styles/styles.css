@@ -277,6 +277,12 @@ body .contact {
     justify-content: center;
     align-items: center;
 }
+.contact form .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
 
  form {
     display: flex;
@@ -291,15 +297,12 @@ form label {
     line-height: 24px;
 }
 
-form input, 
-form textarea, 
-form button {
+.contact form input, .contact form textarea, .contact form button {
     width: 300px;
     font-family: inherit;
     font-size: 16px;
     line-height: 24px;
     border: 1px solid black;
-    margin-bottom: 24px;
 }
 
 form textarea {
@@ -307,12 +310,6 @@ form textarea {
     resize: none; 
 }
 
-
-form button {
-    width: 300px;
-    height: 48px;
-    cursor: pointer;
-}
 
 
 
