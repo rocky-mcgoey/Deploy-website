@@ -224,17 +224,24 @@ body .booking-page{
     margin-bottom: 12px; 
     width: 60px; 
     text-align: center; 
-    border: 1px solid black; 
 }
 .booking-page .small-button {
     border: 1px solid black; 
     padding: 5px; 
     text-align: center; 
 }
-.booking-page ul li {
+.booking-page ul {
     margin-bottom: 20px; 
+    list-style: none;
+    display:inline;
+    padding: 0px;
 }
-
+.booking-page li {
+    display: inline;
+    margin: 0px;
+    padding: 0px;
+    border: 1px solid black;
+}
 .booking-page .top-margin {
     margin-top: 24px; 
     margin-bottom: 12px; 
