@@ -18,17 +18,22 @@ const fullDayButton = document.querySelector("#full-day");
 /********* colour change days of week *********/
 // when the day buttons are clicked, we will apply the "clicked" class to that element, and update any other relevant variables. Then, we can recalculate the total cost.
 // added challenge: don't update the dayCounter if the same day is clicked more than once. hint: .classList.contains() might be helpful here!
+function toggleDayclicked(button) {
+    const dayId = button.id;
+
+    if (button.classList.contains("clicked")) {
+        button.classList.remove("clicked");
+        selectedDays.delete(dayId);
+    } else {
+        button.classList.add("clicked");
+        selectedDays.add(dayId);
+    }
+
+    calculateTotalCost();
+}
+
 dayButtons.forEach(button => {
-    button.addEventListener("click", () => {
-        if (!button.classList.contains("clicked")) {
-            button.classList.add("clicked"); 
-            selectedDays.add(button.id); 
-        } else {
-            button.classList.remove("clicked"); 
-            selectedDays.delete(button.id); 
-        }
-        calculateTotalCost(); 
-    });
+    button.addEventListener("click", () => toggleDaySelection(button));
 });
 
 
