@@ -67,6 +67,8 @@ h2 {
     line-height: 3;
     width: 250px; 
     margin-bottom: 20px;
+    margin-left: 75px;
+    margin-right: 75px;
     cursor: pointer; 
 }
 
@@ -96,17 +98,17 @@ header {
 
 header .flex {
     display: flex;
-    align-items: center; /* Vertically centers the content */
-    justify-content: space-between; /* Pushes the image and text to opposite sides */
+    align-items: center; 
+    justify-content: space-between; 
     width: 100%;
-    padding: 0 25px; /* Adds consistent horizontal padding */
+    padding: 0 25px; 
 }
 
 header h1 {
     margin: 0;
     font-size: 48px;
-    text-align: center; /* Ensures proper text alignment */
-    flex-grow: 1; /* Ensures the h1 occupies remaining space */
+    text-align: center; 
+    flex-grow: 1;
 }
 
 header .flex img {
@@ -145,9 +147,17 @@ body .index{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    
 }
 
+
+.index .about-us{
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
 .index .flex  {
     display: flex;
     flex-direction: row;
